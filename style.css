@@ -24,14 +24,6 @@
   --body-background-colour: var(--colour-peppermint);
 }
 
-/*
-  PAGE / BODY
-*/
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  color: var(--body-default-colour);
-  background-color: var(--body-background-colour);
-}
 
 main {
   min-height: 100vh;
@@ -54,3 +46,140 @@ main {
   white-space: nowrap;
   border-width: 0;
 }
+
+
+/* my list*/
+section {
+  width:  590px;
+  height: 450px;
+  background-color: whitesmoke;
+  border-radius: 0.5rem;
+  border: 5px solid black;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Added to center vertically */
+  padding: 85px; /* Adjusted padding for better aesthetics */
+
+  position: absolute; /* Positioned absolutely */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centering trick */
+}
+
+
+/* background image*/
+
+body{
+background-image: url(./images/marvel.png);
+}
+
+
+h1{
+  color: #ED1C24;
+  margin-bottom: 1rem;
+  position: absolute;
+  margin-top: 0.5rem;
+  top: 0;
+  left: 0;
+  margin-left: 1rem;
+}
+
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  color: #333;
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+
+
+.completed {
+  color: #555;
+  text-decoration: line-through;
+}
+
+.delete-button:hover {
+  background-color: #d00000;
+}
+
+.BreakingNews{
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: black;
+  color: white;
+  height: 2rem;
+
+  width: 100%;
+  height: 10%;
+  text-align: center;
+}
+
+
+.spidey {
+  width: 150px;
+  height: 107px;
+  margin-bottom: 3rem;
+  background-image: url(./images/spppp123.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation-name: slide;
+  animation-duration: 4s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  z-index: 1; /* Higher z-index to bring it to the front */
+  position: absolute;
+  top: 13.5%;
+  right: 35.5%;
+  
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+
+/* Media query for devices with a screen width up to 767 pixels (typically phones) */
+@media (max-width: 760px) {
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+/* Media query for devices with a screen width between 768 and 1023 pixels (typically tablets) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    width: 90%;
+  }
+
+
+}
+
+
+
+
+.face{}

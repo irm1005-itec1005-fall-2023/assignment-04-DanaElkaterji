@@ -179,10 +179,10 @@ li {
 
 @keyframes faceAnimation {
   50% {
-    transform: rotatex(90deg) scale(0.8);
+    transform: scale(0.8);
   } 
   10% {
-    transform: rotateY(0) scale(0.8);
+    transform:  scale(0.8);
   }
   
 }

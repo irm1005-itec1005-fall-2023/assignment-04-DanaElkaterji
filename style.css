@@ -50,8 +50,8 @@ main {
 
 /* my list*/
 section {
-  width:  590px;
-  height: 450px;
+  width:  600px;
+  height: 510px;
   background-color: whitesmoke;
   border-radius: 0.5rem;
   border: 5px solid black;
@@ -91,6 +91,8 @@ h1{
 ul {
   list-style-type: none;
   padding: 0;
+  margin-top: 1rem;
+
 }
 
 li {
@@ -129,11 +131,11 @@ li {
   text-align: center;
 }
 
-
 .spidey {
   width: 150px;
   height: 107px;
   margin-bottom: 3rem;
+ 
   background-image: url(./images/spppp123.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -141,11 +143,10 @@ li {
   animation-duration: 4s;
   animation-direction: alternate;
   animation-iteration-count: infinite;
-  z-index: 1; /* Higher z-index to bring it to the front */
+  z-index: 1;/* Higher z-index to bring it to the front */
   position: absolute;
-  top: 13.5%;
+  top: 6.5%;
   right: 35.5%;
-  
 }
 
 @keyframes slide {
@@ -160,26 +161,28 @@ li {
   }
 }
 
-
-
-/* Media query for devices with a screen width up to 767 pixels (typically phones) */
-@media (max-width: 760px) {
-  .container {
-    width: 100%;
-    padding: 10px;
-  }
+.face {
+  width: 150px;
+  height: 107px;
+  margin-bottom: 3rem;
+  background-image: url(./images/head.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation: faceAnimation 4s infinite alternate;
+  position: absolute;
+  margin-left: 3rem;
+  margin-top:2rem;
+  z-index: 2;
+  top: 58%;
+  left: 26%; /* Adjusted to place the element at the top-left corner */
 }
 
-/* Media query for devices with a screen width between 768 and 1023 pixels (typically tablets) */
-@media (min-width: 768px) and (max-width: 1023px) {
-  .container {
-    width: 90%;
+@keyframes faceAnimation {
+  50% {
+    transform: rotatex(90deg) scale(0.8);
+  } 
+  10% {
+    transform: rotateY(0) scale(0.8);
   }
-
-
+  
 }
-
-
-
-
-.face{}

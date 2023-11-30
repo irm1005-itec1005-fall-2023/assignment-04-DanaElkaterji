@@ -23,26 +23,51 @@
   <!-- Set the Favicon  -->
   <link rel="icon" href="./images/favicon/rocket.svg" type="image/svg+xml" />
 </head>
+
 <body>
+  <div class="spidey"></div>
+  <div class="face"></div>
 
-  <!--
+  <section>
+    <h1>Super List</h1>
+    <h2>Today</h2>
+    <form id="todayform">
+      <table>
+        <tr>
+          <td><input type="text" id="newItem" placeholder="Hello Captain..."></td>
+          <td><button class="addbtn" type="submit">Add</button></td>
+        </tr>
+      </table>
+    </form>
+    <ul id="todoList"></ul>
 
-    Assignment 04 - Finishing a Todo List App
+    <h2>Tomorrow</h2>
+    <form id="tomorrowform">
+      <table>
+        <tr>
+          <td><input type="text" id="newItemTomorrow" placeholder="Hello Captain..."></td>
+          <td><button class="addbtntomorrow" type="submit">Add</button> </td>
+        </tr>
+      </table>
+    </form>
+    <ul id="TomorrowList"></ul>
 
-    Instructions:
-
-    Important checklist:
-
-    - Are users able to create and delete to do list items?
-    - Have you set a favicon? (included - but it's a rocket)
-    - Has a team member conducted a code review and left a GitHub Issue in your repo?
-    - Have you conducted a code review and left a GitHub Issue on your team member's repo?
-
-  -->
-
-  <main>
-    <div id="app"></div>
-  </main>
+    <h2>Future</h2>
+    <form id="futureform">
+      <table>
+        <tr>
+          <td><input type="text" id="newItemFuture" placeholder="Hello Captain..."></td>
+          <td><button class="addbtnFuture" type="submit">Add</button></td>
+        </tr>
+      </table>
+    </form>
+    
+    <div class="marquee-container">
+      <div class="marquee">
+        Breaking News: The Cat Is Stuck On A Tree
+      </div>
+    </div>
+  </section>
 
   <!-- Add JavaScript File -->
   <script src="./script.js"></script>
